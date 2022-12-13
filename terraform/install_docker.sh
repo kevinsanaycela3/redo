@@ -31,3 +31,4 @@ bash < <(curl -sL https://raw.github.com/railsgirls/installation-scripts/master/
 
 
 
+
