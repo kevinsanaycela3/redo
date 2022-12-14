@@ -22,7 +22,6 @@ sudo apt install docker-compose -y
 
 #Remove any containers and images
 sudo docker-compose down 
-sudo docker rmi $(docker images -a -q)
 
 sudo docker-compose build
 sudo docker-compose run app rake db:create db:migrate 
