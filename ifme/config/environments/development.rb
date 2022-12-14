@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-primary_domain = 'localhost:3000'
+primary_domain = '54.90.157.180:3000'
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
