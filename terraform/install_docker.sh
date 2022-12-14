@@ -21,6 +21,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 sudo apt install docker-compose -y 
 
 sudo docker-compose down 
+docker rmi $(docker images -a -q)
 
 sudo docker-compose build
 sudo docker-compose run app rake db:create db:migrate 
