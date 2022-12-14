@@ -1,6 +1,12 @@
 #!/bin/bash
 
 cd /home/ubuntu
+
+if [ -d "redo" ]; then
+  sudo rm -rf redo/
+fi
+
+
 git clone https://github.com/kevinsanaycela3/redo.git
 
 cd redo/ifme/
@@ -19,4 +25,5 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 sudo apt install docker-compose -y 
+
 
