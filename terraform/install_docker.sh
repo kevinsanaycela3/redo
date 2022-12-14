@@ -20,6 +20,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 sudo apt install docker-compose -y 
 
+#Remove any containers and images
 sudo docker-compose down 
 sudo docker rmi $(docker images -a -q)
 
@@ -28,3 +29,8 @@ sudo docker-compose run app rake db:create db:migrate
 sleep 3
 sudo docker-compose run app rake db:seed
 sudo docker-compose up 
+
+sleep 60
+
+#Remove containers
+sudo docker-compose down 
