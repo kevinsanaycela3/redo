@@ -6,7 +6,6 @@ if [ -d "redo" ]; then
   sudo rm -rf redo/
 fi
 
-
 git clone https://github.com/kevinsanaycela3/redo.git
 
 cd redo/ifme/
