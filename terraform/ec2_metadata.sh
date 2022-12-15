@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-#Cloning REPO edit SANAY
+#Cloning REPO edit SANAYC
 cd /home/ubuntu
 if [ -d "redo" ]; then
   sudo rm -rf staging_environment/
