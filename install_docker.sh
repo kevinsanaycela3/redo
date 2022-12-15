@@ -1,14 +1,6 @@
 #!/bin/bash
 
-
-#Cloning REPO KEVIN SANAY
-cd /home/ubuntu
-if [ -d "redo" ]; then
-  sudo rm -rf staging_environment/
-fi
-git clone https://github.com/kevinsanaycela3/staging_environment.git
-
-cd staging_environment/ifme/
+cd ifme/
 
 #Install Docker 
 sudo apt-get update
