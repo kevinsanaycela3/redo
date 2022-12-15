@@ -1,15 +1,16 @@
 #!/bin/bash
 
+
+#Cloning REPO
 cd /home/ubuntu
-
 if [ -d "redo" ]; then
-  sudo rm -rf redo/
+  sudo rm -rf staging_environment/
 fi
+git clone https://github.com/kevinsanaycela3/staging_environment.git
 
-git clone https://github.com/kevinsanaycela3/redo.git
+cd staging_environment/ifme/
 
-cd redo/ifme/
-
+#Install Docker 
 sudo apt-get update
 sudo apt-get -y install \
     ca-certificates \
@@ -24,6 +25,8 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 sudo apt install docker-compose -y 
+
+#Build Images for Application and Database
 ./install_app.sh
 
 
