@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#CHECK CRON
+
 i=0
 
 while [ $i -lt 6 ]; do # 6 ten-second intervals in 1 minute
