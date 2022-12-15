@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-primary_domain = '54.227.33.24:3000'
-
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -14,7 +12,7 @@ Rails.application.configure do
   config.eager_load = false
 
   # reroute all requests with errors to the views/layouts/errors.html.erb page
-  config.consider_all_requests_local = false
+  config.consider_all_requests_local = true
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
@@ -84,6 +82,5 @@ Rails.application.configure do
 
   config.force_ssl = false
 
-  config.action_controller.default_url_options = { host: primary_domain }
-  config.action_controller.asset_host = primary_domain
+  
 end
