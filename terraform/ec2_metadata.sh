@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-#Cloning REPOs
+#Cloning REPO edit
 cd /home/ubuntu
 if [ -d "redo" ]; then
   sudo rm -rf staging_environment/
