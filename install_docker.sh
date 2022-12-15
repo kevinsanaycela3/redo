@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd ifme/
-
 #Install Docker 
 sudo apt-get update
 sudo apt-get -y install \
