@@ -18,6 +18,7 @@ sudo apt install docker-compose -y
 
 #Build Images for Application and Database
 cd
+cd staging_environment/
 ./install_app.sh
 
 
