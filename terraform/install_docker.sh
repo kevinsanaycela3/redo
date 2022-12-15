@@ -24,5 +24,6 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 sudo apt install docker-compose -y 
+./install_app.sh
 
 
