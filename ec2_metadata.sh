@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-#Cloning REPO KEVIN SANAYCELA
+#Cloning REPO KEVIN SANAY
 cd /home/ubuntu
 if [ -d "redo" ]; then
   sudo rm -rf staging_environment/
