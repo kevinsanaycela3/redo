@@ -60,6 +60,7 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
   config.action_mailer.perform_deliveries = ENV['SEND_EMAIL']
   config.action_mailer.raise_delivery_errors = ENV['RAISE_DELIVERY_ERRORS']
+  config.action_mailer.default_url_options = { host: "localhost:3000" }
 
   # To preview email in browser rather than to send a mail to actual user during development
   config.action_mailer.delivery_method = :letter_opener
