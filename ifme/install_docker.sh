@@ -17,8 +17,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 sudo apt install docker-compose -y 
 
 #Build Images for Application and Database YO
-cd
-cd staging_environment/
 ./install_app.sh
 
 
